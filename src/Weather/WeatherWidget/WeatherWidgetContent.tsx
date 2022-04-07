@@ -68,7 +68,6 @@ export function WeatherWidgetContent({
           label="Feels like"
           value={getTemperature(data.main.feels_like)}
         />
-        {/* <pre>{JSON.stringify(data, null, 2)}</pre> */}
       </>
     );
   }
