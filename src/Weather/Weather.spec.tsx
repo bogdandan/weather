@@ -70,10 +70,9 @@ export const handlers = [
 ];
 
 describe(`${Weather.name}`, () => {
-  let server: ReturnType<typeof setupServer>;
+  const server = setupServer(...handlers);
 
   beforeAll(() => {
-    server = setupServer(...handlers);
     server.listen();
   });
 
